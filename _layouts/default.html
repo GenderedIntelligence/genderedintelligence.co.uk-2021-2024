@@ -45,7 +45,11 @@
 									<ul class="dropdown-menu">
 										{% for subitem in item.subnav %}
 											<li>
+												{% if subitem.url contains "http" %}
+												<a href="{{ subitem.url }}" target="_blank">
+													{% else %}
 												<a href="/{{ subitem.url }}">
+													{% endif %}
 													{% if subitem.icon %}<i class="{{subitem.icon}} pull-right"></i>{% endif %}
 													{{ subitem.page }}
 												</a>
