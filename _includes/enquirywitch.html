@@ -107,6 +107,7 @@ QUESTION:How old are you?/QUESTION
 [[Under 30-&gt;crisis-youth]]
 [[30 and over-&gt;crisis-adult]]</tw-passagedata><tw-passagedata pid="14" name="support-non-emergency" tags="" position="336,906" size="100,100">QUESTION:How old are you?/QUESTION
 [[Under 30-&gt;support-self-youth]]
+
 [[30 and over-&gt;support-self-adult]]</tw-passagedata><tw-passagedata pid="15" name="crisis-youth" tags="" position="32,1059" size="100,100">Please fill in the form below and we will respond as soon as we can.
 
 FORMFIELD:[Name]{name}(text)/FORMFIELD
@@ -376,7 +377,6 @@ We no longer participate in research requests where we are not specifically coll
 We have decided to take this step because, as a small charity, we do not have the capacity to look into the content of individual research projects to make sure they align with our values and approach to research before sharing them. We feel that sharing a research request might be assumed to be an endorsement on our part. In addition, we receive an incredibly large number of requests for this kind of support and simply cannot work with all researchers.
 
 At the moment, we are prioritising the research and researchers with whom we are in partnership. However, we are able to offer consultancy to review research proposals and support them to meet the Basic Requirements shown below.  If we have worked with a project in this way, and through doing so can see that the research meets those requirements and aligns with our values, we will consider a request to circulate.
-			 
 ## Gendered Intelligence’s Basic Requirements for research requests
 
 We ask that all proposed projects:
@@ -1154,7 +1154,7 @@ var toLength=require("./_to-length"),repeat=require("./_string-repeat"),defined=
 var $export=require("./_export"),defined=require("./_defined"),fails=require("./_fails"),spaces=require("./_string-ws"),space="["+spaces+"]",non="​",ltrim=RegExp("^"+space+space+"*"),rtrim=RegExp(space+space+"*$"),exporter=function(e,r,t){var i={},p=fails(function(){return!!spaces[e]()||non[e]()!=non}),n=i[e]=p?r(trim):spaces[e];t&&(i[t]=n),$export($export.P+$export.F*p,"String",i)},trim=exporter.trim=function(e,r){return e=String(defined(e)),1&r&&(e=e.replace(ltrim,"")),2&r&&(e=e.replace(rtrim,"")),e};module.exports=exporter;
 
 },{"./_defined":89,"./_export":94,"./_fails":96,"./_string-ws":167}],167:[function(require,module,exports){
-module.exports="\t\n\v\f\r   ᠎             　\u2028\u2029\ufeff";
+module.exports="\t\n\v\f\r   ᠎             　\u2028\u2029\ufeff";
 
 },{}],168:[function(require,module,exports){
 var defer,channel,port,ctx=require("./_ctx"),invoke=require("./_invoke"),html=require("./_html"),cel=require("./_dom-create"),global=require("./_global"),process=global.process,setTask=global.setImmediate,clearTask=global.clearImmediate,MessageChannel=global.MessageChannel,Dispatch=global.Dispatch,counter=0,queue={},ONREADYSTATECHANGE="onreadystatechange",run=function(){var e=+this;if(queue.hasOwnProperty(e)){var t=queue[e];delete queue[e],t()}},listener=function(e){run.call(e.data)};setTask&&clearTask||(setTask=function(e){for(var t=[],n=1;arguments.length>n;)t.push(arguments[n++]);return queue[++counter]=function(){invoke("function"==typeof e?e:Function(e),t)},defer(counter),counter},clearTask=function(e){delete queue[e]},"process"==require("./_cof")(process)?defer=function(e){process.nextTick(ctx(run,e,1))}:Dispatch&&Dispatch.now?defer=function(e){Dispatch.now(ctx(run,e,1))}:MessageChannel?(port=(channel=new MessageChannel).port2,channel.port1.onmessage=listener,defer=ctx(port.postMessage,port,1)):global.addEventListener&&"function"==typeof postMessage&&!global.importScripts?(defer=function(e){global.postMessage(e+"","*")},global.addEventListener("message",listener,!1)):defer=ONREADYSTATECHANGE in cel("script")?function(e){html.appendChild(cel("script"))[ONREADYSTATECHANGE]=function(){html.removeChild(this),run.call(e)}}:function(e){setTimeout(ctx(run,e,1),0)}),module.exports={set:setTask,clear:clearTask};
