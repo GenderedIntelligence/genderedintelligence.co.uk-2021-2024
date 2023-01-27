@@ -176,7 +176,6 @@
 - page: Trans Dimension
   url: transdimension
 - page: Support Line
-  url: projects/supportline.html
   subnav: 
      - page: Support Line
        url: projects/supportline.html
