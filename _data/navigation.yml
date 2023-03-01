@@ -177,7 +177,9 @@
   url: transdimension
 - page: Support Line
   subnav: 
-     - page: Support Line
+     - page: Support Services
        url: projects/supportline.html
      - page: Waiting List Warriors
        url: projects/waitinglistwarriors.html
+     - page: Voice Workshops
+       url: projects/voice.html
