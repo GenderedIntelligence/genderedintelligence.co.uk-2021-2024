@@ -175,9 +175,9 @@
        url: contact/casting.html
 - page: Trans Dimension
   url: transdimension
-- page: Support Line
+- page: Support Services
   subnav: 
-     - page: Support Services
+     - page: Support Line
        url: projects/supportline.html
      - page: Waiting List Warriors
        url: projects/waitinglistwarriors.html
