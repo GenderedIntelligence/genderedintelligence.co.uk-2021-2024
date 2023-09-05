@@ -39,15 +39,6 @@
      - page: Volunteer
        url: support-us/volunteer.html
        icon: icon-heart
-- page: Campaigns
-  subnav:
-     - page: Our Campaigns
-       url: services/publicengagement/our-campaigns.html
-       icon: fas fa-fist-raised
-     - page: Briefings and guides
-       url: services/publicengagement/briefings.html
-     - page: Our responses to the GRA
-       url: services/publicengagement/gra/our-responses.html
 - page: Young People & Families
   subnav:
      - page: Support for Young People
@@ -133,7 +124,6 @@
        url: projects/the-corpse-project.html
      - page: Other Projects
        url: projects/project-list.html
-
 - page: Therapists and Counsellors
   subnav:
      - page: Therapists and Counsellors Network
@@ -143,6 +133,15 @@
        url: professionals/therapists-and-counsellors/training.html
      - page: Therapists and Counsellors Directory
        url: professionals/therapists-and-counsellors/directory.html
+- page: Campaigns
+  subnav:
+     - page: Our Campaigns
+       url: services/publicengagement/our-campaigns.html
+       icon: fas fa-fist-raised
+     - page: Briefings and guides
+       url: services/publicengagement/briefings.html
+     - page: Our responses to the GRA
+       url: services/publicengagement/gra/our-responses.html
 - page: Contact
   subnav:
      - page: Email
