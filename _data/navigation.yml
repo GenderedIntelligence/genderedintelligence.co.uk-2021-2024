@@ -39,13 +39,6 @@
      - page: Volunteer
        url: support-us/volunteer.html
        icon: icon-heart
-- page: COVID-19
-  subnav:
-     - page: Resources Hub
-       url: resources/covid19.html
-       icon: fas fa-house-user
-     - page: Updates
-       url: covid19/index.html
 - page: Campaigns
   subnav:
      - page: Our Campaigns
